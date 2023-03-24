@@ -1,8 +1,9 @@
-import { combineReducers } from "redux";
-import auth from "./auth";
-import message from "./message";
+import { combineReducers } from 'redux';
+import register from './registerReducer';
+import login from './loginReducer';
 
-export default combineReducers({
-  auth,
-  message,
+const rootReducer = combineReducers({
+  register, login
 });
+
+export default rootReducer;
